@@ -3,8 +3,14 @@
 ##########          Markus Drechsel 1327557       #############
 ###############################################################
 
+# If a problem occurs, that the function 'filter()' is alreads masked from the package 'stats'
+# then just disable the package 'stats' as a whole and the problem should be fixed.
 install.packages("tidyverse")
 library(tidyverse)
+install.packages("readxl")
+library(readxl)
+install.packages("plotly")
+library(plotly)
 
 ###############################################################
 ###################           IMPORT        ###################
@@ -20,8 +26,7 @@ LEfinalData <- LEintermediate %>% filter(geo == "AT")
 ###############################################################
 ###################           PLOT          ###################
 ###############################################################
-install.packages("plotly")
-library(plotly)
+
 
 # extract data from LEfinalData set for the four main criteria
 # HLEF = healthy live expectancy female
