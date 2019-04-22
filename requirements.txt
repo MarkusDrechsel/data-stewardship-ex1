@@ -1,0 +1,2 @@
+- RStudio installed
+- R version 3.5.1 or higher
